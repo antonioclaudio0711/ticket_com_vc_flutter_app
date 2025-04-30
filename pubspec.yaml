@@ -1,0 +1,58 @@
+name: ticket_com_vc_app
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# Given a version number MAJOR.MINOR.PATCH, increment the:
+# MAJOR version when you make incompatible API changes
+# MINOR version when you add functionality in a backward compatible manner
+# PATCH version when you make backward compatible bug fixes
+version: 1.2.0+4
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  get_it: ^8.0.3 # Biblioteca utilizada para injeção de dependências
+  dio: ^5.7.0 # Biblioteca utilizada para realização de requisições HTTP e conexão com API
+  fpdart: ^1.1.1 # Biblioteca utilizada para realizar validações após requisições HTTP e conexão com API
+  mobile_scanner: ^6.0.5 # Biblioteca utilizada para realizar o processo de escanear QRCodes
+  shared_preferences: ^2.5.1 # Biblioteca utilizada para realizar o armazenamento interno de pequenas informações
+  intl: ^0.20.2 # Biblioteca utilizada para realizar a formatação das datas advindas da API
+  device_info_plus: ^11.2.2 # Biblioteca utilizada para envio do ID do dispositivo do usuário
+  uuid: ^4.5.1 # Biblioteca utilizada para gerar Uuid aleatório
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
